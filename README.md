@@ -14,6 +14,12 @@ The error you got after Step 4 of Part 2 told you something useful about why tha
 
 3. To be honest, I totally forgot what I fixed. It was either the missing "f", or a missing semi-colon. The "f" is important because the variable is instantiated as a float, so you have to add it at the end of the number. I don't know why, because this doesn't exist in C/C++, but I guess that makes C# special. We need the semi-colon because it is a crucial part of the syntax. It tells the computer it is the end of the line, and it also helps you organize your code.
 
+
+### W3
+The method named GetResponse() should have the return type string, since we are trying to get a text response. This method should have 2 parameters. The first one is int, the friendship level with the character, and the second should be a bool, checking whether or not the player knows the character's secret. Together, the method should be:
+
+private string GetResponse(int friendshipLvl, bool secret){}
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
