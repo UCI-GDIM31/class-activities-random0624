@@ -30,7 +30,7 @@ Question: What do we use Vector3.negativeinfinity and Vector3.positiveinifinity 
 
 Answer: There really isn't much use for it. It could be used to represent unreachable or invalid positions, and it might be used for debugging as an output in the console.
 
-
+The DeerW5 Class should have two member variables, and one being a SerializeField. I need methods like Start and Update to create an instance of the NavMeshAgent object, and to set the destination of the deer.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
