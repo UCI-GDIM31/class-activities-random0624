@@ -10,12 +10,13 @@ public class DeerW5 : MonoBehaviour
 {
     [SerializeField] private Transform _destination;
 
-
+    private NavMeshAgent agent;
+    
     private void Start(){
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(_destination.position);
+        agent = GetComponent<NavMeshAgent>();
     }
     private void Update(){
+        agent.SetDestination(_destination.position);
     }
 }
 
