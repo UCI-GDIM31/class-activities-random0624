@@ -29,6 +29,8 @@ private string GetResponse(int friendshipLvl, bool secret){}
 Question: What do we use Vector3.negativeinfinity and Vector3.positiveinifinity for?
 
 Answer: There really isn't much use for it. It could be used to represent unreachable or invalid positions, and it might be used for debugging as an output in the console.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 

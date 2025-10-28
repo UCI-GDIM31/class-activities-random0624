@@ -45,7 +45,12 @@ public class CatW5 : MonoBehaviour
 
         Vector3 translation = Vector3.zero;
         
-
+        if(Input.GetKey(KeyCode.W)){
+            translation.z = 1;
+        }
+        if(Input.GetKey(KeyCode.S)){
+            translation.z = -1;
+        }
 
         // STEP 1 & 2 ---------------------------------------------------------
 
@@ -60,5 +65,10 @@ public class CatW5 : MonoBehaviour
         {
             _animator.SetBool(_isWalkingName, false);
         }
+
+        if(_flipWSControls)
+            transform.Translate(-translation * _moveSpeed * Time.deltaTime);
+        else
+            transform.Translate(translation * _moveSpeed * Time.deltaTime);
     }
 }
